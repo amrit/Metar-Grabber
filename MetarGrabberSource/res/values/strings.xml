@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">METAR Grabber</string>
+    <string name="app_name">Metar Grab</string>
+    <string name="welcome">Welcome to Accelo, the fast and simple accelerometer!</string>
+</resources>

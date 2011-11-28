@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+    
+   
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:textSize="25dp" android:text="@string/title" android:gravity="center" android:paddingTop="20dp" android:paddingBottom="20dp"/>
+<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textViewMetar" android:text="METAR"></TextView>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+    <EditText android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/EditTextAirportCode" android:hint="e.g. KORD" 
+                      android:textSize="17dip"
+                      android:singleLine="true" android:inputType="textCapCharacters"   /> 
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Go!" android:layout_weight="1" android:id="@+id/buttonRetrieveMetar"></Button>
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reset" android:layout_weight="1" android:id="@+id/buttonReset"></Button>
+</LinearLayout>
+<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TAF" android:paddingTop="20dp" android:id="@+id/textViewTaf"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout1">
+   <EditText android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/EditTextTaf" android:hint="e.g. KJFK" 
+                      android:textSize="17dip"
+                      android:singleLine="true" android:inputType="textCapCharacters"   /> 
+    <Button android:layout_height="wrap_content" android:id="@+id/buttonRetrieveTaf" android:text="Go!" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+    <Button android:layout_height="wrap_content" android:text="Reset" android:id="@+id/buttonResetTaf" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+</LinearLayout>
+<ScrollView >
+<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/textDisplayMetar" android:text="METAR info displayed here!" android:textSize="15dp"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textDisplayTaf" android:text="TAF info displayed here!" android:textSize="15dp" android:paddingTop="10dp" ></TextView>
+</ScrollView>
+</LinearLayout>
